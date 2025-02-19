@@ -32,14 +32,17 @@
             padding: 30px;
             text-align: center;
             position: relative;
+                   width: 100%;
+        overflow: hidden;
         }
         .header-image {
-            width: 200%;
-            height: 400px;
+            width: 100vw; /* Garante que a imagem ocupe toda a largura da tela */
+        height: 600px; /* Ajuste da altura desejada */
+        min-height: 400px; /* Evita que a imagem fique muito pequena */
+        max-height: 600px; /* Mantém o limite de altura */
             background: url('header-background.jpg') center/cover no-repeat;
             background-size: cover;
     background-position: center;
-    height: 600px;
         }
 
 
