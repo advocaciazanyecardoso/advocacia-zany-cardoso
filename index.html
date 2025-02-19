@@ -22,50 +22,47 @@
             margin: 0;
             padding: 0;
             text-align: justify;
-            overflow-x: hidden; /* Remove qualquer espaço extra à direita */
         }
                header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #333;
-        color: #fff;
-        padding: 30px;
-        text-align: center;
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .header-image {
-        width: 100vw; /* Garante que a imagem ocupe toda a largura da tela */
-        height: 600px; /* Ajuste da altura desejada */
-        min-height: 400px; /* Evita que a imagem fique muito pequena */
-        max-height: 600px; /* Mantém o limite de altura */
-        background: url('header-background.jpg') center/cover no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .header-content {
-        max-width: 900px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .header-title {
-        font-size: 2em;
-        font-weight: bold;
-        margin: 0;
-    }
-
-    .header-subtitle {
-        font-size: 1.1em;
-        font-weight: normal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        overflow: hidden; 
         }
+        .header-image {
+            width: 100%;
+            height: 600px;
+            background: url('header-background.jpg') center/cover no-repeat;
+            background-size: cover;
+    background-position: top center;
+            min-height: 400px;
+        max-height: 600px;
+        }
+
+
+        .header-content {
+            max-width: 900px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+        .header-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header-subtitle {
+            font-size: 1.1em;
+            font-weight: normal;
         }
         .whatsapp-link, .contato-link {
     color: #fff;
@@ -177,8 +174,10 @@
             }
                 
     .header-image {
-        height: 200px; /* Altura para desktops */
-            }
+        height: 300px; /* Reduz altura para dispositivos móveis */
+            min-height: 250px;
+            background-position: center top; /* Ajuste adicional para mobile */
+        }
     }
         /* Estilo neutro para links de contato */
        #contato a.contato-link {
