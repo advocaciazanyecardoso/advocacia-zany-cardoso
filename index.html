@@ -15,7 +15,7 @@
     <meta name="description" content="Márcio Cardoso - Advogado Criminalista - Atendimento 24h">
     <title>Márcio Cardoso - Advogado Criminal - Atendimento 24h</title>
     <style>
-        body {
+       body {
             font-family: 'Georgia', serif;
             background-color: #f9f9f9;
             color: #333;
@@ -25,21 +25,19 @@
         }
                header {
             display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #333;
-        color: #fff;
-        padding: 0;
-        text-align: center;
-        position: relative;
-        width: 100%;
-        overflow: hidden;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            position: relative;
         }
         .header-image {
             width: 100%;
-        height: auto;
-        max-height: 400px; /* Define um limite para evitar imagens excessivamente grandes */
-        min-height: 200px; /* Evita que a imagem fique muito pequena */
+        height: 40vh; /* Ajuste automático com base no tamanho da tela */
+        min-height: 300px; /* Garante que a imagem tenha um tamanho mínimo adequado */
+        max-height: 600px; /* Evita que a imagem fique muito grande em telas largas */
         background: url('header-background.jpg') center/cover no-repeat;
         background-size: cover;
         background-position: center;
@@ -53,12 +51,6 @@
             flex-direction: column;
             align-items: center;
             gap: 15px;
-            position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: white;
         }
         .header-title {
             font-size: 2em;
