@@ -153,12 +153,20 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         @media (max-width: 768px) {
-            .box {
-                width: 100%; /* Faz com que as caixas ocupem 100% da largura em telas menores */
-            }
-            nav a {
-                display: block; /* Torna os links do menu empilhados verticalmente no mobile */
-                margin: 10px 0;
+            .box-container {
+        flex-direction: column; /* Faz com que os boxes fiquem em coluna */
+        align-items: center;
+    }
+
+    .box {
+        width: 90%; /* Ajusta a largura para caber melhor na tela */
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        display: block; /* Transforma o menu em uma lista vertical no celular */
+        margin: 8px 0;
+    }
             }
             .photo-gallery {
                 flex-direction: column; /* Torna as fotos em uma coluna no mobile */
@@ -170,9 +178,20 @@
             }
                 
     .header-image {
-        height: 200px; /* Altura para desktops */
-            }
+           .header-image {
+        height: 250px; /* Reduz a altura para não cortar a imagem */
+        min-height: 200px;
+        background-position: center top;
     }
+    
+    .header-content {
+        padding: 15px;
+    }
+
+    .header-title {
+        font-size: 1.5em;
+    }
+
         /* Estilo neutro para links de contato */
        #contato a.contato-link {
     color: #333; /* Cor neutra */
