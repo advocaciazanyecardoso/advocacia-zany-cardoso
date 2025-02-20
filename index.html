@@ -153,20 +153,12 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         @media (max-width: 768px) {
-            .box-container {
-        flex-direction: column; /* Faz com que os boxes fiquem em coluna */
-        align-items: center;
-    }
-
-    .box {
-        width: 90%; /* Ajusta a largura para caber melhor na tela */
-        margin-bottom: 20px;
-    }
-
-    nav a {
-        display: block; /* Transforma o menu em uma lista vertical no celular */
-        margin: 8px 0;
-    }
+           .box {
+                width: 100%; /* Faz com que as caixas ocupem 100% da largura em telas menores */
+            }
+            nav a {
+                display: block; /* Torna os links do menu empilhados verticalmente no mobile */
+                margin: 10px 0;
             }
             .photo-gallery {
                 flex-direction: column; /* Torna as fotos em uma coluna no mobile */
@@ -178,9 +170,8 @@
             }
                 
     .header-image {
-           .header-image {
-        height: 100px; /* Reduz a altura para telas menores */
-    
+        height: 200px; /* Altura para desktops */
+            }
     }
     
 
