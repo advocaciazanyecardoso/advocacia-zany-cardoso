@@ -49,12 +49,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px;
-            text-align: center; /* Centraliza todo o texto */
+            gap: 10px; /* Espaço entre os textos */
+    text-align: center; /* Centraliza todo o texto */
     position: absolute;
-    top: 50%; /* Posiciona no meio */
+    bottom: 10%; /* Move o texto para baixo */
     left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
+    transform: translate(-50%, 0); /* Mantém centralizado horizontalmente */
     width: 100%;
         }
         .header-title {
@@ -184,12 +184,12 @@
         .header-content {
         padding: 10px; /* Reduz o espaçamento para telas menores */
         gap: 5px; /* Diminui o espaço entre os títulos */
-        top: 60%; /* Ajusta a posição para melhor visualização */
+        bottom: 5%; /* Mantém o texto mais abaixo no celular */
     }
 
     .header-title {
         font-size: 1.5em; /* Reduz o tamanho da fonte no celular */
-    } 
+    }
     
 
         /* Estilo neutro para links de contato */
