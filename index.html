@@ -181,7 +181,9 @@
            .header-image {
         height: 250px; /* Reduz a altura para não cortar a imagem */
         min-height: 200px;
-        background-position: center top;
+        background-size: contain; /* Faz a imagem se ajustar sem cortes laterais */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Garante que não repita */
     }
     
     .header-content {
