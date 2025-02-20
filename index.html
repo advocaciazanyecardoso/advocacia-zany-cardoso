@@ -49,12 +49,19 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
+            text-align: center; /* Centraliza todo o texto */
+    position: absolute;
+    top: 50%; /* Posiciona no meio */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
+    width: 100%;
         }
         .header-title {
             font-size: 2em;
             font-weight: bold;
-            margin: 0;
+            margin: 5px 0;
+            color: white;
         }
         .header-subtitle {
             font-size: 1.1em;
@@ -174,7 +181,15 @@
         background-size: 100% auto; /* Garante que a imagem se encaixe sem cortes laterais */
         background-position: center top; /* Mantém a parte superior visível */
     }
-        
+        .header-content {
+        padding: 10px; /* Reduz o espaçamento para telas menores */
+        gap: 5px; /* Diminui o espaço entre os títulos */
+        top: 60%; /* Ajusta a posição para melhor visualização */
+    }
+
+    .header-title {
+        font-size: 1.5em; /* Reduz o tamanho da fonte no celular */
+    } 
     
 
         /* Estilo neutro para links de contato */
