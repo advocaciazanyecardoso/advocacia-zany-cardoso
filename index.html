@@ -188,16 +188,18 @@
                 margin-bottom: 10px;
             }
             .header-attendance {
-        font-size: 1em; /* 🔹 Ajusta o tamanho do texto */
-        padding: 10px; /* 🔹 Mantém um espaçamento confortável */
-        width: 100%; /* 🔹 Garante que ocupe toda a largura */
+        font-size: 1em; /* 🔹 Mantém o tamanho legível */
+        padding: 10px; /* 🔹 Ajusta o espaçamento */
+        width: 100%; /* 🔹 Garante que fique bem encaixado */
+        margin-top: -20px; /* 🔹 Reduz espaço vazio entre cabeçalho e subtítulo */
     }
                 
     .header-image {
-        height: 550px; /* 🔹 Aumenta a altura do cabeçalho */
-        background-size: cover; /* 🔹 Ajusta para ocupar todo o espaço */
-        background-position: center center; /* 🔹 Mantém centralizado */
-        background-repeat: no-repeat;
+        height: auto; /* 🔹 Altura automática para manter proporção */
+        max-height: 400px; /* 🔹 Limita o tamanho para não ocupar muito espaço */
+        background-size: contain; /* 🔹 Faz a imagem caber sem cortes */
+        background-position: center center; /* 🔹 Mantém a imagem centralizada */
+        background-repeat: no-repeat; /* 🔹 Evita repetição */
     }
         .header-content {
         position: absolute;
@@ -211,7 +213,6 @@
     .header-title {
         font-size: 1.4em; /* Reduz um pouco para melhor encaixe */
     }
-        }
      
 
         /* Estilo neutro para links de contato */
@@ -225,6 +226,7 @@
 #contato a.contato-link:hover {
     color: #555; /* Cor ao passar o mouse */
 }
+        }
     
     </style>
 </head>
