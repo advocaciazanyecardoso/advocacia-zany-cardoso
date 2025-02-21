@@ -67,16 +67,15 @@
         }
         .header-attendance {
     background-color: #333; /* Fundo escuro */
-    color: white; /* Texto branco */
-    text-align: center;
+    color: white; /* Texto branco para visibilidade */
+    text-align: center; /* Centraliza o texto */
     font-size: 1.2em;
     font-weight: bold;
-    padding: 10px; /* Reduzido para melhor ajuste */
-    width: 100%;
-    max-width: 1200px; /* Limita a largura no Desktop */
-    max-width: 100%; /* Impede que ultrapasse a tela */
-    margin: 0 auto; /* Centraliza no layout */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 12px 0; /* Espaçamento superior e inferior */
+    width: 100vw; /* Garante que a largura ocupe toda a tela */
+    max-width: 100%; /* Evita ultrapassar a largura */
+    margin: 0 auto; /* Centraliza */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
 }
         
         .whatsapp-link, .contato-link {
@@ -191,10 +190,11 @@
             .header-attendance {
         font-size: 1em; /* 🔹 Mantém o tamanho legível */
         padding: 10px; /* 🔹 Ajusta o espaçamento */
-        width: 100%; /* 🔹 Garante que fique bem encaixado */
+        width: 100vw; /* 🔹 Garante que fique bem encaixado */
         max-width: 100%; /* Garante que não ultrapasse a tela */
-        margin-top: -20px; /* 🔹 Reduz espaço vazio entre cabeçalho e subtítulo */
-    }
+        margin: 0 auto; /* Centraliza */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
                 
     .header-image {
          height: 300px; /* Aumenta a altura no mobile */
