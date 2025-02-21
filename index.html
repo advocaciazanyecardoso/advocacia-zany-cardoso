@@ -66,6 +66,12 @@
             font-size: 1.1em;
             font-weight: normal;
         }
+         @media (min-width: 1024px){
+        .header-content {
+            bottom: 15%; /* Mantém o texto mais abaixo */
+            transform: translate(-50%, 50%); /* Melhor ajuste fino */
+        }
+         }
         .whatsapp-link, .contato-link {
     color: #fff;
     font-weight: bold;
@@ -158,11 +164,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        @media (min-width: 1024px) {
-    .header-content {
-        bottom: 15%; /* Mantém o texto mais abaixo */
-        transform: translate(-50%, 50%); /* Melhor ajuste fino */
-    }
+        
         @media (max-width: 768px) {
            .box {
                 width: 100%; /* Faz com que as caixas ocupem 100% da largura em telas menores */
@@ -178,7 +180,7 @@
             .photo-gallery img {
                 width: 60%; /* Ajusta a largura das imagens no mobile */
                 margin-bottom: 10px;
-            }
+            }}
                 
     .header-image {
          height: 250px; /* Reduz a altura no celular */
