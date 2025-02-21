@@ -197,15 +197,14 @@
     }
      @media (min-width: 1024px) {
             .header-content {
-                position: relative; /* 🔹 Altera a posição para o desktop */
-        bottom: unset;
-        left: unset;
-        transform: none;
+        position: absolute; /* Continua dentro do cabeçalho */
+        bottom: 5%; /* Move um pouco mais para baixo */
+        left: 50%;
+        transform: translate(-50%, 50%); /* Ajuste fino */
         width: auto;
-        margin-top: -50px; /* 🔹 Move o texto para baixo da imagem */
-        background: rgba(0, 0, 0, 0.7); /* 🔹 Fundo escuro para melhor leitura */
-        padding: 15px 20px;
-        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.5); /* 🔹 Fundo semi-transparente para facilitar a leitura */
+        padding: 20px 30px; /* 🔹 Melhor espaçamento */
+        border-radius: 10px; /* 🔹 Arredondamento para estilo */
     }
 }
 
