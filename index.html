@@ -48,12 +48,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px; /* Espaço entre os textos */
+            gap: 15px; /* Espaço entre os textos */
     text-align: center; /* Centraliza todo o texto */
     position: absolute;
-    bottom: 5%; /* Move o texto para baixo */
+    bottom: 10%; /* Move o texto para baixo */
     left: 50%;
-    transform: translate(-50%, 10%); /* Mantém centralizado horizontalmente */
+    transform: translate(-50%, 30%); /* Mantém centralizado horizontalmente */
     width: 100%;
         }
         .header-title {
@@ -158,6 +158,11 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        @media (min-width: 1024px) {
+    .header-content {
+        bottom: 15%; /* Mantém o texto mais abaixo */
+        transform: translate(-50%, 50%); /* Melhor ajuste fino */
+    }
         @media (max-width: 768px) {
            .box {
                 width: 100%; /* Faz com que as caixas ocupem 100% da largura em telas menores */
@@ -214,12 +219,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <header>
         <div class="header-image"></div>
         <div class="header-content">
-            <div class="header-title">ATENDIMENTO SEG À SEX (9H-18H)
-            CRIMINAL 24H</div>
-            <div class="header-subtitle"></div>
-            <a href="https://wa.me/5565996651992" class="contato-link" id="whatsapp-link">
-                Fale comigo no WhatsApp! <span class="whatsapp-icon"></span>
-            </a>
+            <div class="header-title">ATENDIMENTO SEG À SEX (9H-18H) </div>
+            <div class="header-title">CRIMINAL 24 HORAS </div>
         </div>
     </header>
 
