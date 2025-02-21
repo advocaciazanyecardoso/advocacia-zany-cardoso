@@ -72,9 +72,9 @@
     font-size: 1.2em;
     font-weight: bold;
     padding: 12px 0; /* Espaçamento superior e inferior */
-    width: 100%; 
-    max-width: 1200px; /* Define uma largura máxima */
-    margin: 0 auto; /* Centraliza a caixa dentro do layout */
+    width: 100vw; /* Garante que a largura ocupe toda a tela */
+    max-width: 100%; /* Evita ultrapassar a largura */
+    margin: 0 auto; /* Centraliza */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
 }
         
@@ -188,16 +188,16 @@
                 margin-bottom: 10px;
             }
             .header-attendance {
-       font-size: 1em; /* Reduz tamanho da fonte para melhor leitura */
-        padding: 10px; /* Ajusta espaçamento */
-        max-width: 100%; /* Garante que a largura não ultrapasse a tela */
+       font-size: 1em; /* Reduz um pouco a fonte para melhor leitura */
+        padding: 10px; /* Ajusta o espaçamento */
+        width: 100%; /* Garante que o subtítulo ocupe toda a tela */
     }
                 
     .header-image {
-         height: 400px; /* Reduz a altura no celular */
-        background-size: 150% auto; /* Garante que a imagem se encaixe sem cortes laterais */
-        background-position: center top; /* Mantém a parte superior visível */
-    }
+         height: 380px; /* Aumenta a altura da imagem no mobile */
+        background-size: cover;
+        background-position: center;
+        
         .header-content {
         background: none; /* 🔹 Remove fundo escuro no mobile */
         margin-top: 10px; /* 🔹 Mantém alinhado corretamente no celular */
