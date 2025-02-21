@@ -72,8 +72,8 @@
     font-size: 1.2em;
     font-weight: bold;
     padding: 12px 0; /* Espaçamento superior e inferior */
-    width: 100vw; /* Garante que a largura ocupe toda a tela */
-    max-width: 100%; /* Evita ultrapassar a largura */
+    width: 100%; /* Ajuste para evitar barra de rolagem */
+    max-width: 1200px; /* Garante que não fique muito largo */
     margin: 0 auto; /* Centraliza */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
 }
@@ -190,16 +190,16 @@
             .header-attendance {
         font-size: 1em; /* 🔹 Mantém o tamanho legível */
         padding: 10px; /* 🔹 Ajusta o espaçamento */
-        width: 100vw; /* 🔹 Garante que fique bem encaixado */
-        max-width: 100%; /* Garante que não ultrapasse a tela */
-        margin: 0 auto; /* Centraliza */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-}
+        width: 100%; /* 🔹 Garante que fique bem encaixado */
+        max-width: 100%; /* 🔹 Evita que ultrapasse a tela */
+        margin: 0 auto; /* 🔹 Centraliza */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    }
                 
     .header-image {
-         height: 300px; /* Aumenta a altura no mobile */
-        background-size: contain; /* Garante que a imagem inteira seja exibida */
-        background-position: center center; /* Centraliza a imagem */
+        height: 400px; /* 🔹 Aumenta a altura da imagem */
+        background-size: cover; /* 🔹 Garante que a imagem preencha o espaço */
+        background-position: center; /* 🔹 Mantém a parte mais importante visível */
     }
         .header-content {
         position: absolute;
@@ -211,7 +211,7 @@
     }
     
     .header-title {
-        font-size: 1.4em; /* Reduz um pouco para melhor encaixe */
+        font-size: 1.4em; /* 🔹 Ajuste fino para melhor encaixe */
     }
      
 
