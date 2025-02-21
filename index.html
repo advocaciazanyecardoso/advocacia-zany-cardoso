@@ -207,8 +207,15 @@
 }
             @media (min-width: 1024px) {
     .header-content {
-        bottom: 5%; /* Ajusta a posição para não ficar sobre a imagem */
-        transform: translate(-50%, 90%); /* Mantém centralizado e desloca mais para baixo */
+        position: absolute;
+        bottom: -40px; /* Move o texto para fora da imagem */
+        left: 50%;
+        transform: translate(-50%, 100%); /* Ajuste fino para a posição correta */
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7); /* Fundo escuro para melhor leitura */
+        padding: 15px 20px;
+        border-radius: 8px;
+        width: auto;
     }
 }
     </style>
