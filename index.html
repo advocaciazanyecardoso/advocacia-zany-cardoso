@@ -188,29 +188,31 @@
                 margin-bottom: 10px;
             }
             .header-attendance {
-       font-size: 1em; /* Reduz um pouco a fonte para melhor leitura */
+        font-size: 1em; /* Reduz um pouco a fonte para melhor leitura */
         padding: 10px; /* Ajusta o espaçamento */
         width: 100%; /* Garante que o subtítulo ocupe toda a tela */
     }
                 
     .header-image {
-         height: 380px; /* Aumenta a altura da imagem no mobile */
-        background-size: cover;
-        background-position: center;
-        
-        .header-content {
-        background: none; /* 🔹 Remove fundo escuro no mobile */
-        margin-top: 10px; /* 🔹 Mantém alinhado corretamente no celular */
-        text-align: center;
-        bottom: 5%;
-        transform: translate(-50%, 15%);
+       height: 450px; /* Aumenta a altura da imagem no mobile */
+        background-size: contain; /* Faz a imagem caber sem cortes */
+        background-position: top center; /* Mantém o topo visível */
+        background-repeat: no-repeat; /* Evita repetições */
     }
-}
+        .header-content {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 90%;
+    }
     
 
     .header-title {
-        font-size: 1.5em; /* Reduz o tamanho da fonte no celular */
+        font-size: 1.4em; /* Reduz um pouco para melhor encaixe */
     }
+        }
      
 
         /* Estilo neutro para links de contato */
