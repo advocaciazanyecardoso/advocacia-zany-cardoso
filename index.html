@@ -43,21 +43,18 @@
 
 
         .header-content {
-            max-width: 800px;
+          max-width: 800px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     text-align: center;
-    position: absolute;
-    bottom: -40px; /* 🔹 Move o texto para fora da imagem */
+    position: absolute; /* ❗ Mantém absoluto para mobile */
+    bottom: 10%; /* ❗ Mantém a posição no mobile */
     left: 50%;
-    transform: translate(-50%, 100%); /* 🔹 Mantém centralizado e bem posicionado */
-    width: auto;
-    background: rgba(0, 0, 0, 0.7); /* 🔹 Fundo escuro para facilitar a leitura */
-    padding: 15px 20px;
-    border-radius: 8px;
+    transform: translate(-50%, 30%); /* ❗ Mantém centralizado no mobile */
+    width: 100%;
 }
         .header-title {
             font-size: 2em;
@@ -186,11 +183,11 @@
         background-position: center top; /* Mantém a parte superior visível */
     }
         .header-content {
-        padding: 10px; /* Reduz o espaçamento para telas menores */
-        gap: 5px; /* Diminui o espaço entre os títulos */
-        bottom: 5%; /* Mantém o texto mais abaixo no celular */
-        transform: translate(-50%, 15%); /* Ajuste fino para melhorar a posição */
-        background: none; /* 🔹 Remove fundo no celular */
+        background: none; /* 🔹 Remove fundo escuro no mobile */
+        margin-top: 0px; /* 🔹 Mantém alinhado corretamente no celular */
+        text-align: center;
+        bottom: 5%;
+        transform: translate(-50%, 15%);
     }
 }
     
@@ -200,16 +197,17 @@
     }
      @media (min-width: 1024px) {
             .header-content {
-                position: absolute;
-                bottom: -40px; /* Move o texto para fora da imagem */
-                left: 50%;
-                transform: translate(-50%, 100%); /* Mantém centralizado */
-                text-align: center;
-                background: rgba(0, 0, 0, 0.7); /* Fundo escuro para melhor leitura */
-                padding: 15px 20px;
-                border-radius: 8px;
-                width: auto;
-            }
+                position: relative; /* 🔹 Altera a posição para o desktop */
+        bottom: unset;
+        left: unset;
+        transform: none;
+        width: auto;
+        margin-top: -50px; /* 🔹 Move o texto para baixo da imagem */
+        background: rgba(0, 0, 0, 0.7); /* 🔹 Fundo escuro para melhor leitura */
+        padding: 15px 20px;
+        border-radius: 8px;
+    }
+}
 
         /* Estilo neutro para links de contato */
        #contato a.contato-link {
