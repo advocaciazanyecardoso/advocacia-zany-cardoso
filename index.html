@@ -192,7 +192,19 @@
     .header-title {
         font-size: 1.5em; /* Reduz o tamanho da fonte no celular */
     }
-    
+     @media (min-width: 1024px) {
+            .header-content {
+                position: absolute;
+                bottom: -40px; /* Move o texto para fora da imagem */
+                left: 50%;
+                transform: translate(-50%, 100%); /* Mantém centralizado */
+                text-align: center;
+                background: rgba(0, 0, 0, 0.7); /* Fundo escuro para melhor leitura */
+                padding: 15px 20px;
+                border-radius: 8px;
+                width: auto;
+            }
+        }
 
         /* Estilo neutro para links de contato */
        #contato a.contato-link {
@@ -205,19 +217,7 @@
 #contato a.contato-link:hover {
     color: #555; /* Cor ao passar o mouse */
 }
-            @media (min-width: 1024px) {
-    .header-content {
-        position: absolute;
-        bottom: -40px; /* Move o texto para fora da imagem */
-        left: 50%;
-        transform: translate(-50%, 100%); /* Ajuste fino para a posição correta */
-        text-align: center;
-        background: rgba(0, 0, 0, 0.7); /* Fundo escuro para melhor leitura */
-        padding: 15px 20px;
-        border-radius: 8px;
-        width: auto;
-    }
-}
+    
     </style>
 </head>
 <body>
