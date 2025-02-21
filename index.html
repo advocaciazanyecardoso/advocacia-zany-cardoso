@@ -191,13 +191,16 @@
     }
                 
     .header-image {
-         height: 250px; /* Aumenta a altura no mobile */
-        background-size: cover; /* Mantém a imagem ajustada corretamente */
-        background-position: center top; /* Foca a parte superior da imagem */
+         height: 350px; /* Reduz a altura no celular */
+        background-size: 100% auto; /* Garante que a imagem se encaixe sem cortes laterais */
+        background-position: center top; /* Mantém a parte superior visível */
     }
         .header-content {
-       bottom: 5%; /* Ajusta a posição do texto */
-        transform: translate(-50%, 10%); /* Melhora a centralização */
+        background: none; /* 🔹 Remove fundo escuro no mobile */
+        margin-top: 0px; /* 🔹 Mantém alinhado corretamente no celular */
+        text-align: center;
+        bottom: 5%;
+        transform: translate(-50%, 15%);
     }
 }
     
