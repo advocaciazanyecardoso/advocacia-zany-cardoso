@@ -38,7 +38,7 @@
             height: 550px;
             background: url('header-background.jpg') center/cover no-repeat;
             background-size: cover;
-    background-position: center;
+    background-position: top center;
         }
 
 
@@ -204,6 +204,12 @@
 
 #contato a.contato-link:hover {
     color: #555; /* Cor ao passar o mouse */
+}
+            @media (min-width: 1024px) {
+    .header-content {
+        bottom: 5%; /* Ajusta a posição para não ficar sobre a imagem */
+        transform: translate(-50%, 90%); /* Mantém centralizado e desloca mais para baixo */
+    }
 }
     </style>
 </head>
