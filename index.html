@@ -71,7 +71,7 @@
     text-align: center; /* Centraliza o texto */
     font-size: 1.2em;
     font-weight: bold;
-    padding: 12px 0; /* Espaçamento superior e inferior */
+    padding: 10px 0; /* Espaçamento superior e inferior */
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
 }
@@ -191,16 +191,13 @@
     }
                 
     .header-image {
-         height: 250px; /* Reduz a altura no celular */
-        background-size: 100% auto; /* Garante que a imagem se encaixe sem cortes laterais */
-        background-position: center top; /* Mantém a parte superior visível */
+         height: 350px; /* Aumenta a altura no mobile */
+        background-size: cover; /* Mantém a imagem ajustada corretamente */
+        background-position: center top; /* Foca a parte superior da imagem */
     }
         .header-content {
-        background: none; /* 🔹 Remove fundo escuro no mobile */
-        margin-top: 0px; /* 🔹 Mantém alinhado corretamente no celular */
-        text-align: center;
-        bottom: 5%;
-        transform: translate(-50%, 15%);
+       bottom: 10%; /* Ajusta a posição do texto */
+        transform: translate(-50%, 20%); /* Melhora a centralização */
     }
 }
     
