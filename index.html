@@ -35,11 +35,11 @@
         }
         .header-image {
             width: 100%;
-            height: 550px;
-            background: url('header-background.jpg') center/cover no-repeat;
-            background-size: cover;
-    background-position: top center;
-        }
+    height: 500px; /* Ajusta a altura para maior visibilidade */
+    background: url('header-background.jpg') center/cover no-repeat;
+    background-size: contain; /* Faz com que a imagem se ajuste inteira */
+    background-position: center center; /* Garante o posicionamento correto */
+}
         
         .header-content {
           max-width: 800px;
@@ -188,24 +188,21 @@
                 margin-bottom: 10px;
             }
             .header-attendance {
-        font-size: 1em; /* 🔹 Mantém o tamanho legível */
-        padding: 10px; /* 🔹 Ajusta o espaçamento */
-        width: 100%; /* 🔹 Garante que fique bem encaixado */
-        max-width: 100%; /* 🔹 Evita que ultrapasse a tela */
-        margin: 0 auto; /* 🔹 Centraliza */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+        font-size: 1em; /* Ajusta tamanho da fonte */
+        padding: 8px; /* Ajusta espaçamento */
+        width: 100%; /* Garante que não ultrapasse a tela */
+        max-width: 100%; /* Evita que o bloco ultrapasse a largura */
+        box-sizing: border-box; /* Ajusta corretamente os limites */
     }
                 
     .header-image {
-        height: 400px; /* 🔹 Aumenta a altura da imagem */
-        background-size: cover; /* 🔹 Garante que a imagem preencha o espaço */
-        background-position: center; /* 🔹 Mantém a parte mais importante visível */
+        height: 320px; /* Aumenta a altura do cabeçalho no mobile */
+        background-size: contain; /* Evita zoom na imagem */
     }
         .header-content {
-        position: absolute;
-        bottom: 15%;
+        bottom: 5%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, 15%);
         text-align: center;
         width: 90%;
     }
