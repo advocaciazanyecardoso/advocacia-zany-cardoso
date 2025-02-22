@@ -213,15 +213,17 @@
      
 
         /* Estilo neutro para links de contato */
-        #contato a.contato-link {
-    color: #333; /* Cor neutra */
-    text-decoration: underline;
-    background-color: transparent; /* Remove o fundo verde */
-    padding: 0; /* Remove o padding, se necessário */
+       #contato a.contato-link {
+    color: #333 !important; /* Mantém a cor do texto */
+    text-decoration: none !important; /* 🔹 Remove a sublinhagem de forma forçada */
+    background-color: transparent !important; /* Mantém fundo transparente */
+    padding: 0 !important; /* Garante alinhamento correto */
+    border: none !important; /* 🔹 Remove qualquer borda que possa estar causando efeito visual */
 }
 
 #contato a.contato-link:hover {
-    color: #555; /* Cor ao passar o mouse */
+    color: #444 !important; /* 🔹 Ajuste de cor ao passar o mouse */
+    text-decoration: none !important; /* 🔹 Garante que não sublinhe no hover */
 }
         }
     
